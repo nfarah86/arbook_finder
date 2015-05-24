@@ -295,7 +295,6 @@ def _error_notifier():
         file_content = read_error_log.read()
 
         # send an email with contents of error log
-        # look at sungju's Notifier method
         error_content = "<h3>arbook_finder_scraper</h3><pre>Error</pre>" \
                         "<h3>Stacktrace</h3><pre>{stack}</pre>"\
             .format(stack=file_content)
